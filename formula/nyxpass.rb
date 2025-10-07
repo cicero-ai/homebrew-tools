@@ -6,10 +6,10 @@ class Nyxpass < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/cicero-ai/nyx/releases/download/v1.0.0/nyx-macos-x86_64.tar.gz"
-    sha256 "e90420f037c2f226c054df3d11c8b93f1fd09b786b507e08cf16fb6ecd8a6827"
+    sha256 "6c30754cd5cc983d2ff60708e259293ae9f04b979b325b1b0d4a437553032346"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/cicero-ai/nyx/releases/download/v1.0.0/nyx-macos-aarch64.tar.gz"
-    sha256 "619fcd4fefb330d7d498740818ed75426172c4a48a49133468beaf8b5a6b7c2c"
+    sha256 "857c1ab36d99272618c17e67be2282c73c53b1c1248dd0dfae5680a4412423b3"
   else
     odie "nyx is only available for macOS (Intel or ARM)"
   end
